@@ -22,6 +22,12 @@ const notes = [
       title: "Hardware vs. Software",
       content:
         "What's the difference between hardware and software? You can hit your hardware with a hammer, but you can only curse at your software."
-    }
+    },
+    {
+        key: 5,
+        title: "Data Scienctists vs. Data Analysts",
+        content:
+          "Data Analysts are just as smart as Data Scienctists!"
+      }
   ];
 export default notes;

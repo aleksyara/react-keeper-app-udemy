@@ -5,17 +5,17 @@ import Note from "./Note";
 import notes from "../notes"
 
 
-function createNote(note, index){
-console.log("this is note", note)
-return (
-  <Note 
-  key={index}
-  id={index}
-  title={note.title}
-  noteBody={note.content}
-  />
-);
-}
+// function createNote(note, index){
+// console.log("this is note", note)
+// return (
+//   <Note 
+//   key={index}
+//   id={index}
+//   title={note.title}
+//   noteBody={note.content}
+//   />
+// );
+// }
 
 function App() {
   return (
@@ -25,7 +25,14 @@ function App() {
       title={notes[0].title}
       noteBody={notes[0].content}
       /> */}
-      {notes.map(createNote)}
+      {notes.map(createNote => (
+          <Note 
+          key={createNote.key}
+          id={createNote.key}
+          title={createNote.title}
+          noteBody={createNote.content}
+          />
+      ))}
       <Footer />
     </div>
   );
